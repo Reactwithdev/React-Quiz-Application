@@ -27,11 +27,11 @@ const Quiz = () => {
     console.log("scoreeeeeeeeeeeeeee", score)
   }
 
-  const TotelResult=()=>{
+  // const TotelResult=()=>{
 
-    setShowScore(false)
+  //   // setShowScore(false)
     
-  }
+  // }
 
   return (
     <>
