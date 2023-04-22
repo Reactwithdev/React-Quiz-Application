@@ -27,17 +27,18 @@ const Quiz = () => {
     console.log("scoreeeeeeeeeeeeeee", score)
   }
 
-  // const TotelResult=()=>{
+  const ResetAll=()=>{
 
-  //   // setShowScore(false)
-    
-  // }
+    setShowScore(false);
+    setCurrentQuestion(0);
+    setSelectQuestion(0);
+  }
 
   return (
     <>
       <p className='heading-txt'>QUIZ_APP</p>
       <div className='container'>
-        {showScore?(<TotelResult score={score} totelScore={QuizData.length}/>):(
+        {showScore?(<TotelResult score={score} totelScore={QuizData.length} tryAgain={ResetAll}/>):(
           <>
          
         <div className='question'>
