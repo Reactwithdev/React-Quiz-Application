@@ -49,7 +49,7 @@ const Quiz = () => {
               {QuizData[currentQuestion].options.map((option, index) => {
                 return (
                   <button
-                    className={`option-btn ${selectQuestion == index + 1 ? "checked" : ""}`}
+                    className={`option-btn ${selectQuestion === index + 1 ? "checked" : ""}`}
                     onClick={() => setSelectQuestion(index + 1)}
                     key={index}
                   >
